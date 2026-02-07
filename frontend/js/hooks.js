@@ -142,6 +142,7 @@ async function autoFetchMedia(url) {
 
         const data = await res.json();
         console.log("📦 Received preview data:", data);
+        window.renderPreview(data, url);
 
         searchGrid.innerHTML = "";
 
